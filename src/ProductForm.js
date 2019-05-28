@@ -21,7 +21,7 @@ class ProductForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form className="form" onSubmit={this.handleSubmit}>
                 <label htmlFor="name">Nazwa produktu</label>
                 <input id="name" name="name" type="text" />
 

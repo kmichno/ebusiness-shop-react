@@ -27,10 +27,10 @@ class Products extends Component {
             let products = data.map((prod) => {
                 return (
                     <div key={prod.id}>
-                        <div className="product">{prod.name}</div>
-                        <div className="product">{prod.description}</div>
-                        <div className="product">{prod.price}</div>
-                        <div className="product">{prod.categoryId}</div>
+                        <div className="product">Nazwa produktu: {prod.name}</div>
+                        <div className="product">Opis produktu: {prod.description}</div>
+                        <div className="product">Cena: {prod.price}</div>
+                        <div className="product">Id kategorii{prod.categoryId}</div>
                     </div>
                 )
             });

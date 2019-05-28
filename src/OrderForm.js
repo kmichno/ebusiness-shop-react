@@ -21,11 +21,11 @@ class OrderForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label htmlFor="order_date">Order date</label>
+            <form className="form" onSubmit={this.handleSubmit}>
+                <label htmlFor="order_date">Data zamowienia:</label>
                 <input id="order_date" name="order_date" type="text" />
 
-                <label htmlFor="userId">User id</label>
+                <label htmlFor="userId">Id uzytkownika:</label>
                 <input id="userId" name="userId" type="number" />
 
                 <button>Dodaj zamowienie</button>

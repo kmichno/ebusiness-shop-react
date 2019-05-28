@@ -27,9 +27,9 @@ class Users extends Component {
             let users = data.map((user) => {
                 return (
                     <div key={user.id}>
-                        <div className="userName inp">{user.name}</div>
-                        <div className="userName">{user.age}</div>
-                        <div className="userName">{user.address}</div>
+                        <div className="userName inp">Nazwa uzytkownika {user.name}</div>
+                        <div className="userName">Wiek {user.age}</div>
+                        <div className="userName">Adres {user.address}</div>
                     </div>
                 )
             });

@@ -27,8 +27,8 @@ class Categories extends Component {
             let categories = data.map((category) => {
                 return (
                     <div key={category.id}>
-                        <div>{category.name}</div>
-                        <div>{category.description}</div>
+                        <div>Nazwa kategorii {category.name}</div>
+                        <div>Opis kategorii {category.description}</div>
                     </div>
                 )
             });

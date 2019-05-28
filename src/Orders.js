@@ -26,9 +26,9 @@ class Orders extends Component {
             }).then(data => {
             let orders = data.map((order) => {
                 return (
-                    <div key={order.id}>
-                        <div>{order.order_date}</div>
-                        <div>{order.userId}</div>
+                    <div className="form" key={order.id}>
+                        <div>Data zamowienia: {order.order_date}</div>
+                        <div>Id uzytkownika: {order.userId}</div>
                     </div>
                 )
             });
