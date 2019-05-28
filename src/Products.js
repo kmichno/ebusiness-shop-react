@@ -26,11 +26,11 @@ class Products extends Component {
             }).then(data => {
             let products = data.map((prod) => {
                 return (
-                    <div key={prod.id}>
-                        <div className="product">Nazwa produktu: {prod.name}</div>
-                        <div className="product">Opis produktu: {prod.description}</div>
-                        <div className="product">Cena: {prod.price}</div>
-                        <div className="product">Id kategorii{prod.categoryId}</div>
+                    <div className="form" key={prod.id}>
+                        <div>Nazwa produktu: {prod.name}</div>
+                        <div>Opis produktu: {prod.description}</div>
+                        <div>Cena: {prod.price}</div>
+                        <div>Id kategorii{prod.categoryId}</div>
                     </div>
                 )
             });
@@ -40,7 +40,7 @@ class Products extends Component {
 
     render() {
         return (
-            <div className="products">
+            <div>
                 {this.state.products}
             </div>
         )

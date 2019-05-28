@@ -20,41 +20,45 @@ import OrderForm from "./OrderForm";
 class App extends Component {
     render() {
         return <Router>
-            <div id="menu">
-                <ul>
-                    <li>
-                        <Link to="/users">Users</Link>
-                    </li>
-                    <li>
-                        <Link to="/products">Products</Link>
-                    </li>
-                    <li>
-                        <Link to="/orders">Orders</Link>
-                    </li>
-                    <li>
-                        <Link to="/categories">Categories</Link>
-                    </li>
-                    <li>
-                        <Link to="/addproduct">Add Product</Link>
-                    </li>
-                    <li>
-                        <Link to="/addorder">Add Order</Link>
-                    </li>
-                    <li>
-                        <Link to="/addcategory">Add Category</Link>
-                    </li>
-                    <li>
-                        <Link to="/register">Register new user</Link>
-                    </li>
-                </ul>
-                <Route path="/users" component={Users}/>
-                <Route path="/products" component={Products}/>
-                <Route path="/orders" component={Orders}/>
-                <Route path="/categories" component={Categories}/>
-                <Route path="/addproduct" component={ProductForm}/>
-                <Route path="/addorder" component={OrderForm}/>
-                <Route path="/addcategory" component={CategoryForm}/>
-                <Route path="/register" component={UserForm}/>
+            <div>
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <Link to="/users">Uzytkownicy</Link>
+                        </li>
+                        <li>
+                            <Link to="/products">Produkty</Link>
+                        </li>
+                        <li>
+                            <Link to="/orders">Zamowienia</Link>
+                        </li>
+                        <li>
+                            <Link to="/categories">Kategorie</Link>
+                        </li>
+                        <li>
+                            <Link to="/addproduct">Dodaj produkt</Link>
+                        </li>
+                        <li>
+                            <Link to="/addorder">Dodaj zamowienie</Link>
+                        </li>
+                        <li>
+                            <Link to="/addcategory">Dodaj kategorie</Link>
+                        </li>
+                        <li>
+                            <Link to="/register">Dodaj uzytkownika</Link>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <Route path="/users" component={Users}/>
+                    <Route path="/products" component={Products}/>
+                    <Route path="/orders" component={Orders}/>
+                    <Route path="/categories" component={Categories}/>
+                    <Route path="/addproduct" component={ProductForm}/>
+                    <Route path="/addorder" component={OrderForm}/>
+                    <Route path="/addcategory" component={CategoryForm}/>
+                    <Route path="/register" component={UserForm}/>
+                </div>
             </div>
         </Router>
     }

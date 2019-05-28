@@ -21,12 +21,18 @@ class CategoryForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label htmlFor="name">Nazwa kategorii</label>
-                <input id="name" name="name" type="text" />
-                <label htmlFor="description">Opis kategorii</label>
-                <input id="description" name="description" type="text" />
-                <button>Dodaj kategorie</button>
+            <form className="form" onSubmit={this.handleSubmit}>
+                <div>
+                    <label htmlFor="name">Nazwa kategorii</label>
+                    <input id="name" name="name" type="text" />
+                </div>
+                <div>
+                    <label htmlFor="description">Opis kategorii</label>
+                    <input id="description" name="description" type="text" />
+                </div>
+                <div>
+                    <button>Dodaj kategorie</button>
+                </div>
             </form>
         );
     }

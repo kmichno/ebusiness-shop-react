@@ -21,17 +21,22 @@ class UserForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label htmlFor="name">Nazwa uzytkownika</label>
-                <input id="name" name="name" type="text" required={true} />
-
-                <label htmlFor="age">Wiek</label>
-                <input id="age" name="age" type="number" />
-
-                <label htmlFor="address">Adres</label>
-                <input id="address" name="address" type="text" />
-
-                <button>Dodaj uzytkownika</button>
+            <form className="form" onSubmit={this.handleSubmit}>
+                <div>
+                    <label htmlFor="name">Nazwa uzytkownika</label>
+                    <input id="name" name="name" type="text" required={true} />
+                </div>
+                <div>
+                    <label htmlFor="age">Wiek</label>
+                    <input id="age" name="age" type="number" />
+                </div>
+                <div>
+                    <label htmlFor="address">Adres</label>
+                    <input id="address" name="address" type="text" />
+                </div>
+                <div>
+                    <button>Dodaj uzytkownika</button>
+                </div>
             </form>
         );
     }

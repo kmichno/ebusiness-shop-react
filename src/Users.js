@@ -26,7 +26,7 @@ class Users extends Component {
             }).then(data => {
             let users = data.map((user) => {
                 return (
-                    <div key={user.id}>
+                    <div className="form" key={user.id}>
                         <div className="userName inp">Nazwa uzytkownika {user.name}</div>
                         <div className="userName">Wiek {user.age}</div>
                         <div className="userName">Adres {user.address}</div>

@@ -26,7 +26,7 @@ class Categories extends Component {
             }).then(data => {
             let categories = data.map((category) => {
                 return (
-                    <div key={category.id}>
+                    <div className="form" key={category.id}>
                         <div>Nazwa kategorii {category.name}</div>
                         <div>Opis kategorii {category.description}</div>
                     </div>

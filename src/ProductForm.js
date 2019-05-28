@@ -22,19 +22,25 @@ class ProductForm extends Component {
     render() {
         return (
             <form className="form" onSubmit={this.handleSubmit}>
-                <label htmlFor="name">Nazwa produktu</label>
-                <input id="name" name="name" type="text" />
-
-                <label htmlFor="description">Opis produktu</label>
-                <input id="description" name="description" type="text" />
-
-                <label htmlFor="price">Cena</label>
-                <input id="price" name="price" type="number" />
-
-                <label htmlFor="categoryId">Kategoria</label>
-                <input id="categoryId" name="categoryId" type="number" />
-
-                <button>Dodaj produkt</button>
+                <div>
+                    <label htmlFor="name">Nazwa produktu</label>
+                    <input id="name" name="name" type="text" />
+                </div>
+                <div>
+                    <label htmlFor="description">Opis produktu</label>
+                    <input id="description" name="description" type="text" />
+                </div>
+                <div>
+                    <label htmlFor="price">Cena</label>
+                    <input id="price" name="price" type="number" />
+                </div>
+                <div>
+                    <label htmlFor="categoryId">Kategoria</label>
+                    <input id="categoryId" name="categoryId" type="number" />
+                </div>
+                <div>
+                    <button>Dodaj produkt</button>
+                </div>
             </form>
         );
     }
